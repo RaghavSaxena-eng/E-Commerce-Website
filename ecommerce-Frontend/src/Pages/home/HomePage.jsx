@@ -10,7 +10,7 @@ export function HomePage({cart, loadCart}) {
 
     useEffect ( () => {
         const getHomeData = async () => {
-            const response = await axios.get('/api/products')
+            const response = await axios.get('https://e-commerce-website-yw07.onrender.com/')
             setProducts(response.data);
         };
         getHomeData();
